@@ -1,0 +1,17 @@
+{
+  "certificatePath": "",
+  "deviceOrientation": "portrait",
+  "disabledMode": "disabled is-disabled",
+  "icon": "/Users/nicomama/Desktop/未标题-1.png",
+  "logLevel": "log",
+  "minPlatformVersion": "1050",
+  "name": "识字",
+  "npmPath": "",
+  "package": "com.child.learnword",
+  "privatePath": "",
+  "tinyPackageMode": false,
+  "tinyPackageServer": "",
+  "useDebugKey": true,
+  "versionCode": "1",
+  "versionName": "1.0.0"
+}

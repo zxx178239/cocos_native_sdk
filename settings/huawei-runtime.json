@@ -1,0 +1,23 @@
+{
+  "appType": "fastgame",
+  "certificatePath": "",
+  "deviceOrientation": "portrait",
+  "disabledMode": "disabled is-disabled",
+  "fullScreen": true,
+  "icon": "/Users/nicomama/Desktop/未标题-1.png",
+  "logLevel": "log",
+  "manifestPath": "",
+  "minPlatformVersion": "1035",
+  "name": "识字",
+  "npmPath": "",
+  "packFirstScreenRes": false,
+  "package": "com.child.learnword",
+  "privatePath": "",
+  "runRelease": false,
+  "showNpmPath": false,
+  "tinyPackageMode": false,
+  "tinyPackageServer": "",
+  "useDebugKey": true,
+  "versionCode": "1",
+  "versionName": "1.0.0"
+}
