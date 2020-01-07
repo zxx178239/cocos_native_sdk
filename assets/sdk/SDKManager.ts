@@ -6,11 +6,33 @@
  */
 
 import { NativeWXLogin } from "./NativeWXLogin";
+import { XiaoMiSDK } from "./XiaoMiSDK";
+import { HuaweiSDK } from "./HuaweiSDK";
 
 class SDKManager {
     public static readonly Instance = new SDKManager();
 
     private _wxLogin = new NativeWXLogin();
+    private _quickGameSDK = null;
+
+    constructor() {
+        if(!cc.sys.isNative) {
+            this._initQuickGameSDK();
+        }
+    }
+
+    private _initQuickGameSDK() {
+        switch(cc.sys.platform) {
+            case cc.sys.XIAOMI_GAME:
+                this._quickGameSDK = new XiaoMiSDK();
+                break;
+            case cc.sys.HUAWEI_GAME:
+                this._quickGameSDK = new HuaweiSDK();
+                break;
+            default:
+                break;
+        }
+    }
 
     // 原生的接口 begin
     public nativeWXLogin() {
@@ -18,6 +40,13 @@ class SDKManager {
     }
 
     // 原生的接口 end
+
+    // 快游戏接口 begin
+    public quickGameLogin(INCallback) {
+        this._quickGameSDK.quickGameLogin(INCallback);
+    }
+
+    // 快游戏接口 end
 
     // 微信登录回调，实际上这里应该是开始登录游戏服务器，在wx登录成功之后
     public wxLoginCallback(INCode) {
