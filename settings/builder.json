@@ -29,14 +29,14 @@
     "portrait": true,
     "upsideDown": false
   },
-  "packageName": "net.sourceforge.simcpux",
+  "packageName": "com.child.learnword",
   "qqplay": {
     "REMOTE_SERVER_ROOT": "",
     "orientation": "portrait",
     "zip": false
   },
   "startScene": "d5abb079-76ab-4f5e-8a7f-8841d1fcd436",
-  "title": "wechat_login",
+  "title": "learnword",
   "webOrientation": "auto",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",

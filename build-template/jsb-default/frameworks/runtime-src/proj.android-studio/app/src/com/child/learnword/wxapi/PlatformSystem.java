@@ -1,16 +1,15 @@
-package net.sourceforge.simcpux.wxapi;
+package com.child.learnword.wxapi;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
+import com.child.learnword.R;
 import com.tencent.mm.opensdk.modelmsg.SendAuth;
 import com.tencent.mm.opensdk.modelmsg.SendMessageToWX;
 import com.tencent.mm.opensdk.modelmsg.WXMediaMessage;
 import com.tencent.mm.opensdk.modelmsg.WXWebpageObject;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
-
-import net.sourceforge.simcpux.R;
 
 import org.cocos2dx.javascript.AppActivity;
 import org.cocos2dx.lib.Cocos2dxActivity;

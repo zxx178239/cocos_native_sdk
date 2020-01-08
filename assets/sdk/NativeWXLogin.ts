@@ -2,7 +2,7 @@
 export class NativeWXLogin {
 
     wechatLogin() {
-        jsb.reflection.callStaticMethod("net/sourceforge/simcpux/wxapi/PlatformSystem", "wechatLoginWithAppID", "(Ljava/lang/String;)V", "wxd930ea5d5a258f4f");//调用java代码进行微信登录
+        jsb.reflection.callStaticMethod("net/sourceforge/simcpux/wxapi/PlatformSystem", "wechatLoginWithAppID", "(Ljava/lang/String;)V", "wxcea5692b6cc9ce2d");//调用java代码进行微信登录
         this.getAccessTokenByCode();    //根据java返回的code获得accessToken
     }
 
@@ -41,7 +41,7 @@ export class NativeWXLogin {
     }
 
     getAccessToken(code) {        //获取accessToken
-        var url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxd930ea5d5a258f4f&secret=1d6d1d57a3dd063b36d917bc0b44d964&code=" + code + "&grant_type=authorization_code";
+        var url = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxcea5692b6cc9ce2d&secret=0ba704036d3997d8dd881b5ee8363393&code=" + code + "&grant_type=authorization_code";
         var self = this;
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function(){
@@ -97,7 +97,7 @@ export class NativeWXLogin {
     }
 
     freshAccessToken(refresh_token) {
-        var url = "https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=wxd930ea5d5a258f4f&grant_type=refresh_token&refresh_token="+refresh_token;
+        var url = "https://api.weixin.qq.com/sns/oauth2/refresh_token?appid=wxcea5692b6cc9ce2d&grant_type=refresh_token&refresh_token="+refresh_token;
         var self = this;
         var xhr = new XMLHttpRequest();
         var ac;

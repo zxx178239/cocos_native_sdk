@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.sourceforge.simcpux"
+    package="com.child.learnword"
     android:installLocation="auto">
 
     <uses-feature android:glEsVersion="0x00020000" />
@@ -20,8 +20,7 @@
         <!-- Tell Cocos2dxActivity the name of our .so -->
         <meta-data android:name="android.app.lib_name"
                    android:value="cocos2djs" />
-        <meta-data android:name="Mob-AppKey" android:value="2dbb23724e27c"/>
-        <meta-data android:name="Mob-AppSecret" android:value="0e214ac6ad480eebae04c62b41601f40"/>
+        
         <activity
             android:name="org.cocos2dx.javascript.AppActivity"
             android:screenOrientation="portrait"

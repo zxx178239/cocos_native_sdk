@@ -34,7 +34,7 @@ import android.content.res.Configuration;
 import android.os.Handler;
 import android.os.Message;
 
-import net.sourceforge.simcpux.wxapi.PlatformSystem;
+import com.child.learnword.wxapi.PlatformSystem;
 
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
@@ -104,7 +104,7 @@ public class AppActivity extends Cocos2dxActivity {
     protected void onDestroy() {
         super.onDestroy();
         SDKWrapper.getInstance().onDestroy();
-
+        removeMobileSDK();
     }
 
     @Override
@@ -129,7 +129,6 @@ public class AppActivity extends Cocos2dxActivity {
     protected void onStop() {
         super.onStop();
         SDKWrapper.getInstance().onStop();
-        removeMobileSDK();
     }
 
     @Override

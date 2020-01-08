@@ -1,4 +1,4 @@
-package net.sourceforge.simcpux.wxapi;
+package com.child.learnword.wxapi;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import org.cocos2dx.javascript.AppActivity;
 
 public class WXEntryActivity extends Activity implements IWXAPIEventHandler{
-    private static final String app_id = "wxd930ea5d5a258f4f";
+    private static final String app_id = "wxcea5692b6cc9ce2d";
     //微信appId
     private IWXAPI api;
 
